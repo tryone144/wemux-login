@@ -81,6 +81,24 @@ Supported [modes](https://github.com/zolrath/wemux/wiki/Client-Commands) include
 | `pair` | Default tmux interactions. See [wiki](https://github.com/zolrath/wemux/wiki/Client-Commands#wemux-pair) |
 | `rogue` | *Not Supported!* Independent session, i.e. free interaction. See [wiki](https://github.com/zolrath/wemux/wiki/Client-Commands#wemux-rogue) |
 
+See [the wiki](https://github.com/zolrath/wemux/wiki/Multi-Host-Capabilities) for a guide on how to use different sessions.
+
+- Disable or enable the `wemux` user:
+```sh
+# Disable user `wemux`
+$ sudo usermod -L wemux
+# Enable user `wemux` again
+$ sudo usermod -U wemux
+```
+
+- Alternative method using `expiredate` (see [this post](https://unix.stackexchange.com/questions/19333/disable-a-users-login-without-disabling-the-account)):
+```sh
+# Disable user `wemux`
+$ sudo usermod --expiredate 1 wemux
+# Enable user `wemux` again
+$ sudo usermod --expiredate "" wemux
+```
+
 ---
 
 (c) 2018 Bernd Busse, [The MIT License](./LICENSE)
