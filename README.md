@@ -74,7 +74,8 @@ $ ssh wemux@remotehost <mode> SESSION
 ```
 
 Supported [modes](https://github.com/zolrath/wemux/wiki/Client-Commands) include:
-|: Mode |: Description |
+
+| Mode | Description |
 | --- | --- |
 | `mirror` | No interaction, i.e. read-only viewer. See [wiki](https://github.com/zolrath/wemux/wiki/Client-Commands#wemux-mirror) |
 | `pair` | Default tmux interactions. See [wiki](https://github.com/zolrath/wemux/wiki/Client-Commands#wemux-pair) |
